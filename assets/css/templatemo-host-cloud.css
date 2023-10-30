@@ -5,7 +5,9 @@ Host Cloud Template
 https://templatemo.com/tm-541-host-cloud
 
 */
+col-md-6 {
 
+}
 body {
 	font-family: 'Roboto', sans-serif;
 	transition: all 0.5s;
@@ -62,7 +64,16 @@ a.gradient-button:hover {
     background: linear-gradient(145deg, rgba(50,100,245,1) 0%, rgba(114,2,187,1) 100%);
 }
 .section-heading {
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+	border-radius: 5px;	
+	border-width: 10px;
+	border: dotted;
+	width: 1200px;
+	height: 500px;
 	margin-bottom: 80px;
+	box-sizing: border-box;
+	position: relative;
+
 }
 .section-heading span {
 	color: #00bcd4;
@@ -633,8 +644,14 @@ header {
 .features-section .feature-item {
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 	border-radius: 5px;
-	padding: 30px;
-	margin-bottom: 100px;
+	border-width: 10px;
+	border: dotted;
+	width: 1200px;
+	height: 500px;
+	margin-bottom: 80px;
+	box-sizing: border-box;
+	position: relative;
+
 }
 .features-section .feature-item .icon {
 	float: left;
@@ -653,6 +670,68 @@ header {
 .features-section .feature-item p {
 	margin-left: 106px;
 }
+
+.child{
+	width: 500px;
+	height: 3%;
+	position: absolute;
+	top: 50%;
+	left: 42%;
+	margin : -25px 0 0 -25px;
+	font-size: 40px;
+}
+
+
+.tg  {
+	border-collapse:collapse;
+	border-spacing:0;
+	border: 2px;
+	width: auto;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tg td{
+	border-color:black;
+	border-style:solid;
+	border-width:1px;
+	font-family:Arial, sans-serif;
+	font-size:14px;
+  	overflow:hidden;
+	padding:10px 20px;
+	word-break:normal;
+}
+.tg th{
+	border-color:black;
+	border-style:solid;
+	border-width:1px;
+	font-family:Arial, sans-serif;
+	font-size:14px;
+  	font-weight:normal;
+ 	overflow:hidden;
+	padding:10px 20px;
+	word-break:normal;	
+}
+.tg .tg-first{
+	border-color:inherit;
+	font-size: 16px;
+	text-align:center;
+	vertical-align:top;
+}
+.tg .tg-second{
+	border-color:inherit;
+	font-size: 18px;
+	text-align:center;
+	vertical-align:top;
+}
+.first {
+	height: 50px;
+}
+.second {
+	height: 50px;
+}
+
+
 
 
 

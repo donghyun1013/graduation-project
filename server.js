@@ -1,15 +1,12 @@
-var http = require('http');	// 서버 만드는 모듈 불러오기
-var fs = require('fs');
-var app = http.createServer(function(request,response){
-    var url = request.url;
-    if(request.url == '/'){
-      url = '/index.html';	// 실행할 url
-    }
-    if(request.url == '/favicon.ico'){
-      return response.writeHead(404);
-    }
-    response.writeHead(200);
-    response.end(fs.readFileSync(__dirname + url));
- 
-});
-app.listen(8080);		// 실행할 port
+const express = require('express')
+const app = express()
+
+app.use(express.static(__dirname + '/assets'))
+
+app.listen(8083, () => {
+  console.log('http:localhost:8083 에서 서버 실행중')
+})
+
+app.get('/', (요청, 응답) => {
+  응답.sendFile(__dirname + '/index.html')
+})
